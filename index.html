@@ -3,28 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Deepika Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi, I'm Deepika</h1>
-    <h2>Aspiring Web Developer</h2>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+
+    <!-- Navigation -->
+     <nav>
+    <button class="button" onclick="window.location.href='index.html'">Home</button>
+    <button class="button" onclick="window.location.href='about.html'">About</button>
+    <button class="button" onclick="window.location.href='skills.html'">Skills</button>
+    <button class="button" onclick="window.location.href='projects.html'">Projects</button>
+    <button class="button" onclick="window.location.href='gallery.html'">Gallery</button>
+    <button class="button" onclick="window.location.href='contact.html'">Contact</button>
     </nav>
-    <p>
+
+
+    <!-- Home -->
+    <section id="home">
+        <h1>Hi, I'm Deepika</h1>
+        <h2>Aspiring Web Developer</h2>
+
+        <p>
+            I am passionate about creating responsive and
+            user-friendly websites while continuously
+            improving my web development skills.
+        </p>
+        <p>
        <br> I’m a Computer Science student and aspiring web developer
             with a passion for creating responsive and user-friendly websites.
 
         <br>I enjoy turning ideas into real projects while continuously
           learning and improving my technical skills.
     </p>
-    <a href="projects.html">View my Work</a>
-    <a href="contact.html">Contact me</a>
+    <a href="projects.html"><button>View Projects</button></a>
+    <a href="contact.html"><button>Contact Me</button></a>
+    </section>
+
+    <!-- About -->
+     <section id="about">
+    <h1>About Me</h1>
+
+    <p>
+        Hi, I'm Deepika, an aspiring web developer with a passion
+        for creating clean, responsive, and user-friendly websites.
+        I enjoy learning new technologies and building projects that
+        help me improve my skills.
+    </p>
+
+    <p>
+        I have experience with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Git</b>, and <b>GitHub</b>.
+        I have experience with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Git</b>, and <b>GitHub</b>.
+        I have experience with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Git</b>, and <b>GitHub</b>.
+        and Linux. My goal is to grow as a web developer and create
+        meaningful digital experiences.
+    </p>
+</section>
+
+    <!-- Skills -->
+    <section id="skills">
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">GitHub</div>
+        <div class="skill-card">Linux</div>
+        <div class="skill-card">VS Code</div>
+    </div>
+</section>
+
+    <!-- Projects -->
+    <section id="projects">
+    <h1>My Projects</h1>
+
+    <h2> Personal Portfolio Website </h2>
+    <div>
+    <p><ol>
+        <li>A responsive personal portfolio website to showcase my skills,
+         projects, education, and contact information</li>
+        <li>A simple web application to add, manage, and remove daily tasks.</li>
+        <li>A simple calculator application that performs basic arithmetic operations
+         with a clean and user-friendly interface.</li>
+        <li>A basic application designed to manage and organize student information efficiently.</li>
+        <div class="projects-container">
+
+        </div>
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive personal portfolio website
+                to showcase my skills, education and projects.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>To-Do List</h3>
+            <p>
+                A simple application to add, manage and
+                remove daily tasks.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p>
+                A simple calculator for performing
+                basic arithmetic operations.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="#">View Project</a>
+        </div>
+
+    </div>
+    
+</section>
+    <!-- Contact -->
+   <section id="contact">
+    <h1>contact me</h1>
+    <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
+    <form>
+        <label for="name">your Name:</label>
+        <input type="name" placeholder="enter your name">
+        <br>
+        <label for="email">your Email:</label>
+        <input type="email" placeholder="enter your email">
+        <br>
+        <label for="phone"> Phone no.</label>
+        <input type="phone" placeholder="enter your phone number">
+       <br>
+        <b>choose your gender:</b>
+        <input type="radio">
+         <label for="male">male</label>
+         <input type="radio" id="female" value="female">
+         <label for="female">female</label>
+         <br>
+         <b>select your interest:</b>
+         <select>
+            <option value="">-- please select --</option>
+             <option value="coding">coding</option>
+             <option value="reading">reading</option>
+         </select>
+         <br>
+         <label for="bio">bio(up to 200 characters):</label>
+         <input type="text">
+          <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/">LinkedIn Profile</a>
+    </p>
+
+    <p>
+        💻 GitHub:
+        <a href="https://github.com/">GitHub Profile</a>
+    </p>
+            <br>
+         <button type="submit">submit</button>
+        </form>
+        </section>
+        <a href="index.html"><button class="fixedButton">TOP</button></a>
+         <footer>
+         <p>&copy; 2026 my portfolio. All rights reserved.</p>
+        </footer>
+        
 </body>
 </html>

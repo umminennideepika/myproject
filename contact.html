@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="contact">
     <h1>contact me</h1>
     <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
     <form>
@@ -20,12 +21,12 @@
         <input type="phone" placeholder="enter your phone number">
        <br>
         <b>choose your gender:</b>
-        <input type="radio">
-         <label for="male">male</label>
-         <input type="radio" id="female" value="female">
-         <label for="female">female</label>
-         <br>
-         <b>select your interest:</b>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+        <br>
+        <b>select your interest:</b>
          <select>
             <option value="">-- please select --</option>
              <option value="coding">coding</option>
@@ -34,13 +35,18 @@
          <br>
          <label for="bio">bio(up to 200 characters):</label>
          <input type="text">
-         <br>
-            <label for="message">message:</label>
-            <textarea name="message"  cols="30" rows="3" id="message" placeholder="your message...."></textarea>
+          <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/">LinkedIn Profile</a>
+    </p>
+
+    <p>
+        💻 GitHub:
+        <a href="https://github.com/">GitHub Profile</a>
+    </p>
             <br>
-            <button type="submit" name="submit_message">submit message</button>
-         <br>
          <button type="submit">submit</button>
         </form>
+        </section>
 </body>
 </html>
